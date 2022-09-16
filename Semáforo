@@ -1,0 +1,25 @@
+#define vm 13
+#define am 12
+#define vd 11
+
+void setup()
+{
+  pinMode(vm, OUTPUT);
+  pinMode(am, OUTPUT);
+  pinMode(vd, OUTPUT);
+
+
+}
+
+void loop()
+{
+  digitalWrite(am, LOW);
+  digitalWrite(vm, HIGH);
+  delay(6000); 
+  digitalWrite(vm, LOW);
+  digitalWrite(vd, HIGH);
+  delay(4000); 
+  digitalWrite(vd, LOW);
+  digitalWrite(am, HIGH);
+  delay(2000);
+}
